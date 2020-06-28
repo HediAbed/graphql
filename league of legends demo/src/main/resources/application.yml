@@ -1,0 +1,13 @@
+server:
+  port: 8020
+spring:
+  resources:
+    static-locations: classpath:/static/
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
